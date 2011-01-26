@@ -15,7 +15,7 @@ module Loopia
 
     # https://www.loopia.se/api/getdomains/
     def get_domains
-      Loopia.base.send('getDomains', Loopia.config.domain)
+      Loopia.base.send('getDomains')
     end
 
     # https://www.loopia.se/api/adddomaintoaccount/
@@ -23,7 +23,7 @@ module Loopia
       Loopia.base.send('addDomainToAccount', Loopia.config.domain, true)
     end
     
-    # https://www.loopia.se/api/adddomaintoaccount/
+    # https://www.loopia.se/api/removedomain/
     def remove_domain(at_expire)
       Loopia.base.send('removeDomain', Loopia.config.domain, at_expire)
     end

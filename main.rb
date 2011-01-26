@@ -40,4 +40,6 @@ module Loopia
 end
 
 # Example
-pp Loopia.dns.get_subdomains
+pp Loopia.config.set_domain("example.com")
+pp Loopia.dns.add_domain
+pp Loopia.dns.get_domains
